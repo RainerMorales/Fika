@@ -27,7 +27,7 @@ function Nav() {
             initial={{ opacity: 0, x: 10 }}
             animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : 0 }}
             transition={{ duration: 0.3 }}
-            className={`fixed bg-zinc-50 text-green-950 w-52 h-120 right-0 top-0  font-medium flex flex-col justify-center items-center rounded ${
+            className={`fixed bg-zinc-100 text-green-950 w-52 h-full right-0 top-0  font-medium flex flex-col justify-around ${
               isOpen ? "block" : "hidden"
             }`}
           >

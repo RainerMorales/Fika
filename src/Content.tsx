@@ -1,36 +1,36 @@
-
+import { WordRotate } from "@/components/magicui/word-rotate";
+import { AuroraText } from "@/components/magicui/aurora-text";
+import { TextReveal } from "@/components/magicui/text-reveal";
+import List from "./List";
+import { BlurFade } from "@/components/magicui/blur-fade";
 function Content() {
   return (
     <>
-      <section className="p-40">
-        <div className="flex items-center gap-6">
-          <div className="space-y-8">
-            <div className="text-7xl ">
-              <span className="text-green-800">Fika</span> is a concept, a state
-              of mind
-            </div>
-            <div className="text-lg opacity-60">
+      <section className="">
+        <div className="flex flex-col lg:flex-row mt-8 gap-6 lg:m-20">
+          <div className="p-6 space-y-8 text-center">
+            <BlurFade delay={0.25} inView className="lg:text-7xl text-5xl  ">
+              <AuroraText>Fika</AuroraText> is a concept, a state of mind
+            </BlurFade>
+            <BlurFade delay={0.25 * 2} inView className="lg:text-lg opacity-60">
               Slowing down, getting in touch with yourself, and connecting with
               the people around you. Sip coffee. Chat with loved ones. Repeat
               again tomorrow.
-            </div>
-            <div>
-              <button className="btn btn-accent">Get Started</button>
-            </div>
+            </BlurFade>
+            <BlurFade delay={0.25 * 2} inView className="space-y-4">
+              <button className="btn btn-primary">Get Started</button>
+            </BlurFade>
           </div>
-          <div className="w-4xl">
-            <img className=" rounded-xl" src="main.jpg" alt="" />
-          </div>
+          <BlurFade delay={0.25 * 3} inView className="">
+            <img className="rounded" src="main.jpg" alt="" />
+          </BlurFade>
         </div>
       </section>
+      <section className="">
+        <List></List>
+      </section>
+   
     </>
   );
 }
 export default Content;
-  {
-    /* <p className="font-medium">
-            Fika is a concept, a state of mind. Slowing down, getting in touch
-            with yourself, and connecting with the people around you. Sip
-            coffee. Chat with loved ones. Repeat again tomorrow.
-          </p> */
-  }

@@ -1,17 +1,13 @@
-// import { FaFacebookSquare } from "react-icons/fa";
-// import { FaSquareInstagram } from "react-icons/fa6";
-// import { FaSquareXTwitter } from "react-icons/fa6";
-
-import { CiCoffeeCup } from "react-icons/ci";
+import { FaBagShopping } from "react-icons/fa6";
 function Nav() {
   return (
     <>
-      <header className="fixed top-0 justify-around p-4 flex items-center w-full bg-white shadow-2xl z-50 ">
-        <div className="flex items-center text-2xl">
-          <CiCoffeeCup size={40} />
-          Coffee
+      <header className=" sticky top-0 justify-around p-4 flex items-center w-full backdrop-blur-sm z-50 ">
+        <div className="flex gap-2 items-center text-2xl">
+          <FaBagShopping size={30} />
+          Shop
         </div>
-        <div>
+        <div className="lg:visible md:visible invisible">
           <ul className="flex gap-6 font-light opacity-80">
             <li>Home</li>
             <li>Services</li>
@@ -19,9 +15,7 @@ function Nav() {
           </ul>
         </div>
       </header>
-      <main>
-
-      </main>
+      <main></main>
     </>
   );
 }

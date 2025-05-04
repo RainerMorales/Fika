@@ -8,14 +8,13 @@ function Nav() {
           Shop
         </div>
         <div className="lg:visible md:visible invisible">
-          <ul className="flex gap-6 font-light opacity-80">
+          <ul className="flex gap-6 font-light opacity-80 text-lg">
             <li>Home</li>
             <li>Services</li>
             <li>About</li>
           </ul>
         </div>
       </header>
-      <main></main>
     </>
   );
 }

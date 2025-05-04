@@ -19,7 +19,7 @@ export const TextReveal: FC<TextRevealProps> = ({ children, className }) => {
     throw new Error("TextReveal: children must be a string");
   }
 
-  const words = children.split(" ");
+  const words = children.split("");
 
   return (
     <div ref={targetRef} className={cn("relative z-0 h-[150vh]", className)}>

@@ -1,15 +1,17 @@
+import { ReactElement } from "react";
+
 interface card{
     title:String
-    comment:string
+    comment:ReactElement
     name:string
 }
 
 function Card(props:card){
     return (
       <>
-        <div className="card border bg-black text-white w-80 shadow-sm">
+        <div className="card border bg-zinc-100 text-black w-80 shadow-sm">
           <div className="avatar avatar-placeholder self-center p-2">
-            <div className="bg-white text-black w-24 rounded-full">
+            <div className="bg-black text-white w-24 rounded-full">
               <span className="text-3xl">{props.name}</span>
             </div>
           </div>

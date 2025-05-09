@@ -1,12 +1,12 @@
-import { FaBagShopping } from "react-icons/fa6";
+
 function Nav() {
   return (
     <>
-      <header className=" sticky top-0 justify-around p-6 flex items-center w-full bg-white z-50 ">
+      <header className=" sticky top-0 justify-around p-4 flex items-center w-full bg-white z-50 ">
         <a href=""> 
-          <div className="flex gap-2 items-center text-2xl cal-sans-regular cursor-pointer ">
-            <FaBagShopping size={30} />
-            Coffee
+          <div className="flex gap-2 items-center text-xl cal-sans-regular cursor-pointer ">
+           <img src="coffee-cup.png" className="w-8" alt="" />
+           <div>Coffee</div>
           </div>
         </a>
         <div className="lg:visible md:visible invisible">

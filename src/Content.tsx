@@ -1,5 +1,4 @@
 import { AuroraText } from "@/components/magicui/aurora-text";
-import { TextAnimate } from "@/components/magicui/text-animate";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import Card from "./Card";
 function Content() {
@@ -37,26 +36,7 @@ function Content() {
           </BlurFade>
         </div>
       </section>
-      <section className="bg-black text-white">
-        <div>
-          <TextAnimate
-            startOnView={true}
-            animation="blurIn"
-            as="h1"
-            className="text-2xl lg:text-center lg:p-30 text-center p-16"
-          >
-            We want to bring FIKA closer to you.Share a cup of happiness among
-            family and friends. To make occasions more special.
-          </TextAnimate>
-        </div>
-      </section>
-      <BlurFade delay={0.25 * 5} inView>
-        <img
-          className="w-[100%] h-100 object-cover m-auto"
-          src="cover.jpg"
-          alt=""
-        />
-      </BlurFade>
+
       <section className=" bg-black p-10">
         <div className="text-2xl text-white text-center p-10 cal-sans-regular">
           What Our Customer Say
@@ -65,32 +45,43 @@ function Content() {
           <Card
             name={"Jeng"}
             title={"Jeng Sabino"}
-            comment={
-              <TextAnimate animation="blurIn" delay={0.5}>
-                "we really enjoy their coffee and sweets... 😍"
-              </TextAnimate>
-            }
+            comment={<div>"we really enjoy their coffee and sweets... 😍"</div>}
           ></Card>
           <Card
             name={"Rico"}
             title={"Rico Ellivera"}
             comment={
-              <TextAnimate animation="blurIn" delay={0.5}>
+              <div>
                 "It's always relaxing here at Fika when you had a coffee freshly
                 brewed."
-              </TextAnimate>
+              </div>
             }
           ></Card>
           <Card
             name={"Tyche"}
             title={"Tyche Clothing Co. "}
             comment={
-              <TextAnimate animation="blurIn">
+              <div>
                 "nice place to avoid stress and think clearly and also the
                 pastries and coffee so yummy"
-              </TextAnimate>
+              </div>
             }
           ></Card>
+        </div>
+        <div className="relative">
+          <img
+            className="w-[100%] h-100 object-cover p-10 opacity-20"
+            src="cover.jpg"
+            alt=""
+          />
+          <BlurFade
+            delay={0.25 * 5}
+            inView
+            className="text-white text-3xl text-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+          >
+            We want to bring FIKA closer to you.Share a cup of happiness among
+            family and friends. To make occasions more special.
+          </BlurFade>
         </div>
       </section>
       <section className="lg:flex justify-center items-center  bg-zinc-100">
@@ -121,4 +112,22 @@ function Content() {
 }
 export default Content;
 
-/* */
+/*<section className="bg-black text-white">
+        <div>
+          <TextAnimate
+            startOnView={true}
+            
+            className="text-2xl lg:text-center lg:p-30 text-center p-16"
+          >
+            We want to bring FIKA closer to you.Share a cup of happiness among
+            family and friends. To make occasions more special.
+          </TextAnimate>
+        </div>
+      </section>
+      <BlurFade delay={0.25 * 5} inView>
+        <img
+          className="w-[100%] h-100 object-cover m-auto"
+          src="cover.jpg"
+          alt=""
+        />
+      </BlurFade> */

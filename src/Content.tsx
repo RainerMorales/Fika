@@ -4,8 +4,8 @@ import Card from "./Card";
 function Content() {
   return (
     <>
-      <section className="">
-        <div className="flex flex-col lg:flex-row mt-8 gap-6 lg:m-20">
+      <section className="mt-30">
+        <div className="flex flex-col lg:flex-row gap-6 lg:m-20">
           <div className="p-4 space-y-8 text-center m-auto lg:w-[50%]">
             <BlurFade
               delay={0.25}
@@ -14,11 +14,7 @@ function Content() {
             >
               <AuroraText>Fika</AuroraText> is a concept, a state of mind
             </BlurFade>
-            <BlurFade
-              delay={0.25 * 2}
-              inView
-              className="lg:text-lg text-zinc-600"
-            >
+            <BlurFade delay={0.25} inView className="lg:text-lg text-zinc-600">
               Slowing down, getting in touch with yourself, and connecting with
               the people around you. Sip coffee. Chat with loved ones. Repeat
               again tomorrow.
@@ -68,43 +64,20 @@ function Content() {
             }
           ></Card>
         </div>
-        <div className="relative">
+        <div className="relative m-8">
           <img
-            className="w-[100%] h-100 object-cover p-10 opacity-20"
+            className="w-[100%] h-100 object-cover  opacity-20"
             src="cover.jpg"
             alt=""
           />
           <BlurFade
             delay={0.25 * 5}
             inView
-            className="text-white text-3xl text-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+            className="text-white w-full lg:text-3xl md:text-3xl text-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
           >
             We want to bring FIKA closer to you.Share a cup of happiness among
             family and friends. To make occasions more special.
           </BlurFade>
-        </div>
-      </section>
-      <section className="lg:flex justify-center items-center  bg-zinc-100">
-        <div className="lg:w-[50%]">
-          <img
-            className="w-[100%] h-70 object-cover m-auto"
-            src="barista.jpg"
-            alt=""
-          />
-        </div>
-        <div className="p-10 lg:w-[50%]">
-          <div className="flex text-center text-xl p-10 lg:p-10 ">
-            We offer an aesthetic coffee cart operated by well-trained fully
-            vaccinated baristas. We use high grade imported coffee beans that
-            makes our signature blends stand out.
-          </div>
-          <label className="floating-label  flex items-center justify-center">
-            <input
-              type="text"
-              placeholder="Email us here"
-              className="input input-md bg-white border border-zinc-400"
-            />
-          </label>
         </div>
       </section>
     </>
@@ -131,3 +104,18 @@ export default Content;
           alt=""
         />
       </BlurFade> */
+
+      // <div className="p-10 lg:w-[50%]">
+      //   <div className="flex text-center text-xl p-10 lg:p-10 ">
+      //     We offer an aesthetic coffee cart operated by well-trained fully
+      //     vaccinated baristas. We use high grade imported coffee beans that
+      //     makes our signature blends stand out.
+      //   </div>
+      //   <label className="floating-label  flex items-center justify-center">
+      //     <input
+      //       type="text"
+      //       placeholder="Email us here"
+      //       className="input input-md bg-white border border-zinc-400"
+      //     />
+      //   </label>
+      // </div>;

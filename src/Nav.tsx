@@ -2,7 +2,7 @@
 function Nav() {
   return (
     <>
-      <header className=" sticky top-0 justify-around p-4 flex items-center w-full bg-white z-50 ">
+      <header className="lg:mt-8 sticky top-0 justify-around p-4 flex items-center w-full bg-white z-50 ">
         <a href=""> 
           <div className="flex gap-2 items-center text-xl cal-sans-regular cursor-pointer ">
            <img src="coffee-cup.png" className="w-8" alt="" />

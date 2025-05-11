@@ -33,7 +33,7 @@ function Content() {
         </div>
       </section>
 
-      <section className=" bg-black p-10">
+      <section className=" bg-black">
         <div className="text-2xl text-white text-center p-10 cal-sans-regular">
           What Our Customer Say
         </div>
@@ -64,16 +64,16 @@ function Content() {
             }
           ></Card>
         </div>
-        <div className="relative m-8">
+        <div className="relative mt-10">
           <img
             className="w-[100%] h-100 object-cover  opacity-20"
             src="cover.jpg"
             alt=""
           />
           <BlurFade
-            delay={0.25 * 5}
+            delay={0.25}
             inView
-            className="text-white w-full lg:text-3xl md:text-3xl text-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+            className="text-white w-full lg:text-3xl lg:p-18 md:text-3xl text-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
           >
             We want to bring FIKA closer to you.Share a cup of happiness among
             family and friends. To make occasions more special.

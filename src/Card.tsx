@@ -11,7 +11,7 @@ function Card(props:card){
       <>
         <div className="card border border-zinc-900  bg-zinc-950 text-black w-80 shadow-sm">
           <div className="avatar avatar-placeholder self-center p-2">
-            <div className="bg-gray-900 text-white w-24 rounded-full">
+            <div className="bg-black text-white w-24 rounded-full">
               <span className="text-3xl">{props.name}</span>
             </div>
           </div>

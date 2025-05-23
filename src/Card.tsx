@@ -16,7 +16,7 @@ function Card(props:card){
             </div>
           </div>
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-zinc-200">{props.title}</h2>
+            <h2 className="card-title text-zinc-200 text-light">{props.title}</h2>
             <div className="text-zinc-400">{props.comment}</div>
           </div>
         </div>

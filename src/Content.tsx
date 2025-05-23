@@ -4,7 +4,7 @@ import Card from "./Card";
 function Content() {
   return (
     <>
-      <section className="mt-30">
+      <section className="mt-10">
         <div className="flex flex-col lg:flex-row gap-6 lg:m-20">
           <div className="p-4 space-y-8 text-center m-auto lg:w-[50%]">
             <BlurFade
@@ -20,10 +20,10 @@ function Content() {
               again tomorrow.
             </BlurFade>
             <BlurFade delay={0.25 * 2} inView className="space-y-4">
-              <button className="btn bg-black text-white">Get Started</button>
+              <button className="btn border-0 bg-black text-white font-light">Get Started</button>
             </BlurFade>
           </div>
-          <BlurFade delay={0.25 * 3} inView className="m-auto">
+          <BlurFade delay={0.25 * 3} inView className="">
             <img
               className="rounded w-[100%] h-100 object-cover"
               src="main.jpg"
@@ -73,7 +73,7 @@ function Content() {
           <BlurFade
             delay={0.25}
             inView
-            className="text-white w-full lg:text-3xl lg:p-18 md:text-3xl text-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+            className="text-white w-full lg:text-3xl lg:p-18 md:text-3xl  text-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
           >
             We want to bring FIKA closer to you.Share a cup of happiness among
             family and friends. To make occasions more special.

@@ -6,12 +6,14 @@
  @plugin "daisyui" {
    themes: light --prefersdark;
  }
-.cal-sans-regular {
-  font-family: "Cal Sans", sans-serif;
-  font-weight: 300;
+ .roboto-fika {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
-
 @theme inline {
    --radius-sm: calc(var(--radius) - 4px);
    --radius-md: calc(var(--radius) - 2px);

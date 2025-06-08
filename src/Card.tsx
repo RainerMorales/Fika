@@ -9,9 +9,9 @@ interface card{
 function Card(props:card){
     return (
       <>
-        <div className="card border border-zinc-900  bg-zinc-950 text-black w-80 shadow-sm">
+        <div className="card border border-zinc-900  bg-zinc-900 text-black w-80 shadow-sm">
           <div className="avatar avatar-placeholder self-center p-2">
-            <div className="bg-black text-white w-24 rounded-full">
+            <div className="bg-white text-black w-24 rounded-full">
               <span className="text-3xl">{props.name}</span>
             </div>
           </div>

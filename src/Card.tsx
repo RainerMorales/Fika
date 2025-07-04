@@ -9,15 +9,15 @@ interface card{
 function Card(props:card){
     return (
       <>
-        <div className="card border border-zinc-900  bg-zinc-900 text-black w-80 shadow-sm">
+        <div className="card border border-zinc-900  bg-zinc-100 text-black h-70 w-80 shadow-sm">
           <div className="avatar avatar-placeholder self-center p-2">
-            <div className="bg-white text-black w-24 rounded-full">
-              <span className="text-3xl">{props.name}</span>
+            <div className="bg-black text-white  w-24 rounded-full">
+              <span className="text-xl">{props.name}</span>
             </div>
           </div>
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-zinc-200 text-light">{props.title}</h2>
-            <div className="text-zinc-400">{props.comment}</div>
+            <h2 className="card-title text-zinc-800 text-light">{props.title}</h2>
+            <div className="text-zinc-800">{props.comment}</div>
           </div>
         </div>
       </>

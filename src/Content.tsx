@@ -1,21 +1,19 @@
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { InteractiveHoverButton } from "./components/magicui/interactive-hover-button";
+import { TextAnimate } from "./components/magicui/text-animate";
 import Card from "./Card";
 function Content() {
   return (
     <>
-      <section className="mt-10">
-        <div className="flex flex-col gap-6">
-          <div className="p-2 space-y-8 text-center m-auto">
-            <BlurFade
-              delay={0.25}
-              inView
-              className="text-6xl font-extrabold"
-            >
-              <AuroraText>Fika</AuroraText> is a concept, <br /> a state of mind
+      <section className="mt-10 mb-10">
+        <div className="flex flex-col lg:flex-row md:flex-row items-center justify-center  gap-6">
+          <div className=" space-y-8 text-center">
+            <BlurFade delay={0.25} inView className="text-4xl font-bold">
+              <AuroraText>Fika</AuroraText> is a concept,
+              <br /> a state of mind
             </BlurFade>
-            <BlurFade delay={0.25} inView className="lg:text-lg text-zinc-600 ">
+            <BlurFade delay={0.25} inView className="text-zinc-600 ">
               Slowing down, getting in touch with yourself, and connecting with
               the people around you. <br /> Sip coffee. Chat with loved ones.
               Repeat again tomorrow.
@@ -35,12 +33,13 @@ function Content() {
           </BlurFade>
         </div>
       </section>
-
-      <section className=" bg-black">
+      <section className="bg-black">
         <div className="text-2xl text-white text-center p-10 cal-sans-regular">
-          What Our Customer Say
+          <TextAnimate animation="scaleUp" by="text">
+            What Our Customer Say
+          </TextAnimate>
         </div>
-        <div className="grid items-center lg:grid-cols-3 place-self-center gap-6 ">
+        <div className="flex flex-col lg:flex-row md:flex-row  items-center justify-center gap-4 ">
           <Card
             name={"Jeng"}
             title={"Jeng Sabino"}
@@ -59,12 +58,7 @@ function Content() {
           <Card
             name={"Tyche"}
             title={"Tyche Clothing Co. "}
-            comment={
-              <div>
-                "nice place to avoid stress and think clearly and also the
-                pastries and coffee so yummy"
-              </div>
-            }
+            comment={<div>"nice place to avoid stress and think clearly"</div>}
           ></Card>
         </div>
         <div className="relative mt-10">

@@ -3,39 +3,40 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import { InteractiveHoverButton } from "./components/magicui/interactive-hover-button";
 import { TextAnimate } from "./components/magicui/text-animate";
 import Card from "./Card";
+import { Badge } from "./components/ui/badge";
 function Content() {
   return (
     <>
-      <section className="m-40">
-        <div className=" space-y-8 text-center">
+      <section className="pt-16 pb-20 ">
+        <div className=" space-y-4 text-center">
           <BlurFade
             duration={0.5}
             direction="up"
             delay={0.25}
             inView
-            className="text-5xl font-bold"
+            className="text-3xl text-center font-bold"
           >
-            <AuroraText>Fika</AuroraText> is a concept,a state of mind
+            <AuroraText>Fika</AuroraText> is a concept, <br />a state of mind
           </BlurFade>
           <BlurFade
             duration={0.5}
             direction="up"
             delay={0.25 * 1.5}
             inView
-            className="text-zinc-600 text-sm "
+            className="text-zinc-600 text-xs p-4 "
           >
             Slowing down, getting in touch with yourself, and connecting with
-            the people around you.<br/>Sip coffee. Chat with loved ones. Repeat again
-            tomorrow.
+            the people around you. Sip coffee. Chat with loved ones. Repeat
+            again tomorrow.
           </BlurFade>
           <BlurFade
             duration={0.5}
             direction="up"
-            delay={2}
+            delay={1.25}
             inView
             className="space-y-4"
           >
-            <InteractiveHoverButton className="bg-zinc-200">
+            <InteractiveHoverButton className="bg-amber-500 text-white text-xs">
               Get Started
             </InteractiveHoverButton>
           </BlurFade>
@@ -44,8 +45,8 @@ function Content() {
       <BlurFade
         duration={0.5}
         direction="up"
-        delay={0.25 * 2 }
-        className="mt-20 mb-20 h-80"
+        delay={0.25 * 2}
+        className=" h-80"
       >
         <img
           className="h-[100%] w-[100%] object-cover"
@@ -53,9 +54,31 @@ function Content() {
           alt=""
         />
       </BlurFade>
-      <section className="">
+      {/* <section className="bg-black">
+        <div className="relative">
+          <img
+            className="w-[100%] h-100 object-cover  opacity-20"
+            src="cover.jpg"
+            alt=""
+          />
+          <BlurFade
+            delay={0.25}
+            inView
+            className="text-white font-light w-full lg:text-3xl lg:p-18 md:text-3xl  text-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+          >
+            We want to bring FIKA closer to you.Share a cup of happiness among
+            family and friends. To make occasions more special.
+          </BlurFade>
+        </div>
+      </section> */}
+      <section className="bg-zinc-100">
         <div className=" text-center p-10 cal-sans-regular">
-          <TextAnimate className="text-3xl text-black" animation="slideUp" by="text">
+          <Badge className="bg-amber-900">Feedback</Badge>
+          <TextAnimate
+            className="text-xl text-black"
+            animation="slideUp"
+            by="text"
+          >
             What Our Customer Say
           </TextAnimate>
         </div>
@@ -81,7 +104,9 @@ function Content() {
             comment={<div>"nice place to avoid stress and think clearly"</div>}
           ></Card>
         </div>
-        <div className="relative mt-10">
+      </section>
+      <section className="bg-black">
+        <div className="relative">
           <img
             className="w-[100%] h-100 object-cover  opacity-20"
             src="cover.jpg"

@@ -6,36 +6,56 @@ import Card from "./Card";
 function Content() {
   return (
     <>
-      <section className="mt-10 mb-10">
-        <div className="flex flex-col lg:flex-row md:flex-row items-center justify-center  gap-6">
-          <div className=" space-y-8 text-center">
-            <BlurFade delay={0.25} inView className="text-4xl font-bold">
-              <AuroraText>Fika</AuroraText> is a concept,
-              <br /> a state of mind
-            </BlurFade>
-            <BlurFade delay={0.25} inView className="text-zinc-600 ">
-              Slowing down, getting in touch with yourself, and connecting with
-              the people around you. <br /> Sip coffee. Chat with loved ones.
-              Repeat again tomorrow.
-            </BlurFade>
-            <BlurFade delay={0.25 * 2} inView className="space-y-4">
-              <InteractiveHoverButton className="font-light border-2 border-black">
-                Get Started
-              </InteractiveHoverButton>
-            </BlurFade>
-          </div>
-          <BlurFade delay={0.25 * 3} inView className="">
-            <img
-              className="rounded w-full h-100 object-cover"
-              src="main.jpg"
-              alt=""
-            />
+      <section className="m-40">
+        <div className=" space-y-8 text-center">
+          <BlurFade
+            duration={0.5}
+            direction="up"
+            delay={0.25}
+            inView
+            className="text-5xl font-bold"
+          >
+            <AuroraText>Fika</AuroraText> is a concept,a state of mind
+          </BlurFade>
+          <BlurFade
+            duration={0.5}
+            direction="up"
+            delay={0.25 * 1.5}
+            inView
+            className="text-zinc-600 text-sm "
+          >
+            Slowing down, getting in touch with yourself, and connecting with
+            the people around you.<br/>Sip coffee. Chat with loved ones. Repeat again
+            tomorrow.
+          </BlurFade>
+          <BlurFade
+            duration={0.5}
+            direction="up"
+            delay={2}
+            inView
+            className="space-y-4"
+          >
+            <InteractiveHoverButton className="bg-zinc-200">
+              Get Started
+            </InteractiveHoverButton>
           </BlurFade>
         </div>
       </section>
-      <section className="bg-black">
-        <div className="text-2xl text-white text-center p-10 cal-sans-regular">
-          <TextAnimate animation="scaleUp" by="text">
+      <BlurFade
+        duration={0.5}
+        direction="up"
+        delay={0.25 * 2 }
+        className="mt-20 mb-20 h-80"
+      >
+        <img
+          className="h-[100%] w-[100%] object-cover"
+          src="/main.jpg"
+          alt=""
+        />
+      </BlurFade>
+      <section className="">
+        <div className=" text-center p-10 cal-sans-regular">
+          <TextAnimate className="text-3xl text-black" animation="slideUp" by="text">
             What Our Customer Say
           </TextAnimate>
         </div>

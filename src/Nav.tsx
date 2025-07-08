@@ -2,22 +2,22 @@
 function Nav() {
   return (
     <>
-      <header className="lg:mt-8 sticky top-0 justify-around p-4 flex items-center w-full bg-white z-50 ">
+      <header className="sticky top-0 justify-around p-4 flex items-center w-full backdrop-blur-sm bg-white/20 z-50 border-b ">
         <a href=""> 
-          <div className="flex gap-2 items-center text-xl cal-sans-regular cursor-pointer ">
+          <div className="flex gap-2 items-center cursor-pointer ">
            <img src="coffee-cup.png" className="w-6" alt="" />
-           <div>Coffee</div>
+           <div className="font-bold">Coffee</div>
           </div>
         </a>
         <div className="lg:visible md:visible invisible">
-          <ul className="flex gap-6 cal-sans-regular  text-zinc-600 text">
-            <li className="lg:tooltip cursor-pointer" data-tip="Home">
+          <ul className="flex gap-6  text-zinc-600 ">
+            <li data-tip="Home">
               Home
             </li>
-            <li className="lg:tooltip cursor-pointer" data-tip="Services">
+            <li data-tip="Services">
               Services
             </li>
-            <li className="lg:tooltip cursor-pointer" data-tip="About">
+            <li data-tip="About">
               About
             </li>
           </ul>

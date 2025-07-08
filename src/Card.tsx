@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-
+import { BlurFade } from "./components/magicui/blur-fade";
 interface card{
     title:String
     comment:ReactElement
@@ -9,9 +9,13 @@ interface card{
 function Card(props:card){
     return (
       <>
-        <div className="card border border-zinc-900  bg-zinc-100 text-black h-70 w-80 shadow-sm">
+        <BlurFade 
+        inView
+        direction="up"
+        delay={2}
+        className="card  h-70 w-80 shadow-2xl">
           <div className="avatar avatar-placeholder self-center p-2">
-            <div className="bg-black text-white  w-24 rounded-full">
+            <div className="bg-blue-900 text-white  w-24 rounded-full">
               <span className="text-xl">{props.name}</span>
             </div>
           </div>
@@ -19,7 +23,7 @@ function Card(props:card){
             <h2 className="card-title text-zinc-800 text-light">{props.title}</h2>
             <div className="text-zinc-800">{props.comment}</div>
           </div>
-        </div>
+        </BlurFade>
       </>
     );
 }

@@ -71,15 +71,27 @@ function Content() {
           </BlurFade>
         </div>
       </section> */}
-      <section className="bg-zinc-100">
+      <section className=" mt-10">
         <div className=" text-center p-10 cal-sans-regular">
-          <Badge className="bg-amber-900">Feedback</Badge>
+          {/* <Badge className="bg-amber-900">Feedback</Badge> */}
           <TextAnimate
-            className="text-xl text-black"
-            animation="slideUp"
+            delay={2}
+            duration={10}
+            className="text-2xl text-black"
+            animation="fadeIn"
             by="text"
           >
+
             What Our Customer Say
+          </TextAnimate>
+          <TextAnimate
+            delay={2.25}
+            animation="fadeIn"
+            duration={2}
+            by="text"
+            className="mt-4 text-xs text-gray-600"
+          >
+            Real reviews from real users.
           </TextAnimate>
         </div>
         <div className="flex flex-col lg:flex-row md:flex-row  items-center justify-center gap-4 ">

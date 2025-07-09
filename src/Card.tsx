@@ -13,15 +13,10 @@ function Card(props:card){
         inView
         direction="up"
         delay={2}
-        className="card  h-70 w-80 shadow-2xl">
-          <div className="avatar avatar-placeholder self-center p-2">
-            <div className="bg-blue-900 text-white  w-24 rounded-full">
-              <span className="text-xl">{props.name}</span>
-            </div>
-          </div>
+        className="card text-white rounded-2xl bg-amber-700 h-40 w-80 shadow">
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-zinc-800 text-light">{props.title}</h2>
-            <div className="text-zinc-800">{props.comment}</div>
+            <h2 className="card-title text-light">{props.title}</h2>
+            <div className="text-xs opacity-80">{props.comment}</div>
           </div>
         </BlurFade>
       </>

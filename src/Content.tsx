@@ -3,7 +3,6 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import { InteractiveHoverButton } from "./components/magicui/interactive-hover-button";
 import { TextAnimate } from "./components/magicui/text-animate";
 import Card from "./Card";
-import { Badge } from "./components/ui/badge";
 function Content() {
   return (
     <>
@@ -71,17 +70,16 @@ function Content() {
           </BlurFade>
         </div>
       </section> */}
-      <section className=" mt-10">
+      <section className="bg-zinc-100">
         <div className=" text-center p-10 cal-sans-regular">
           {/* <Badge className="bg-amber-900">Feedback</Badge> */}
           <TextAnimate
             delay={2}
             duration={10}
-            className="text-2xl text-black"
+            className="text-2xl text-amber-900"
             animation="fadeIn"
             by="text"
           >
-
             What Our Customer Say
           </TextAnimate>
           <TextAnimate
@@ -91,10 +89,11 @@ function Content() {
             by="text"
             className="mt-4 text-xs text-gray-600"
           >
-            Real reviews from real users.
+            We deeply value every story, insight, and honest feedback our users
+            share, as it helps us grow and deliver even better experiences.
           </TextAnimate>
         </div>
-        <div className="flex flex-col lg:flex-row md:flex-row  items-center justify-center gap-4 ">
+        <div className="flex flex-col lg:flex-row md:flex-row  items-center justify-center gap-4 p-10 ">
           <Card
             name={"Jeng"}
             title={"Jeng Sabino"}

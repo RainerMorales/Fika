@@ -13,7 +13,7 @@ function Card(props:card){
         inView
         direction="up"
         delay={2}
-        className="card text-white rounded-2xl bg-amber-700 h-40 w-80 shadow">
+        className="card text-white bg-amber-800 rounded-full h-30 w-80 shadow ">
           <div className="card-body items-center text-center">
             <h2 className="card-title text-light">{props.title}</h2>
             <div className="text-xs opacity-80">{props.comment}</div>

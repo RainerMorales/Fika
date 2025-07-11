@@ -6,7 +6,7 @@ import Card from "./Card";
 function Content() {
   return (
     <>
-      <section className="pt-16 pb-20 ">
+      {/* <section className="pt-16 pb-20 ">
         <div className=" space-y-4 text-center">
           <BlurFade
             duration={0.5}
@@ -40,18 +40,56 @@ function Content() {
             </InteractiveHoverButton>
           </BlurFade>
         </div>
-      </section>
+      </section> */}
       <BlurFade
         duration={0.5}
         direction="up"
-        delay={0.25 * 2}
-        className=" h-80"
+        delay={1}
+        className="relative h-90"
       >
         <img
-          className="h-[100%] w-[100%] object-cover"
+          className="h-[100%] w-[100%] object-cover "
           src="/main.jpg"
           alt=""
         />
+        <BlurFade
+          duration={1}
+          delay={1.50}
+          inView
+          className=" space-y-4 text-center absolute top-0 flex flex-col justify-center items-center backdrop-blur-md bg-black/20 w-[100%] h-[100%]"
+        >
+          <BlurFade
+            direction="up"
+            duration={0.50}
+            delay={2 *1.15}
+            inView
+            className="text-4xl text-center font-bold text-amber-100"
+          >
+            <AuroraText>Fika</AuroraText> is a concept, <br />a state of mind
+          </BlurFade>
+          <BlurFade
+            duration={0.55}
+            direction="up"
+            delay={2 * 1.25}
+            inView
+            className="text-amber-100 text-xs p-4 "
+          >
+            Slowing down, getting in touch with yourself, and connecting with
+            the people around you. Sip coffee. Chat with loved ones. Repeat
+            again tomorrow.
+          </BlurFade>
+          <BlurFade
+            duration={0.55}
+            direction="up"
+            delay={2*1.50}
+            inView
+            className="space-y-4"
+          >
+            <InteractiveHoverButton className="border-none bg-amber-500 text-white text-xs">
+              Get Started
+            </InteractiveHoverButton>
+          </BlurFade>
+        </BlurFade>
       </BlurFade>
       {/* <section className="bg-black">
         <div className="relative">

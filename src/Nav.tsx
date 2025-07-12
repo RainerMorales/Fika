@@ -6,6 +6,7 @@ function Nav() {
       <BlurFade
         duration={0.5}
         delay={1}
+        direction="up"
         className="sticky top-0 justify-around p-4 flex items-center w-full z-50 bg-white shadow "
       >
         <a href="">

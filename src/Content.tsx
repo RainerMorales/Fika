@@ -79,9 +79,9 @@ function Content() {
             again tomorrow.
           </BlurFade>
           <BlurFade
-            duration={0.55}
+            duration={0.60}
             direction="up"
-            delay={2*1.50}
+            delay={2*1.35}
             inView
             className="space-y-4"
           >

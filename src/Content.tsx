@@ -54,15 +54,14 @@ function Content() {
         />
         <BlurFade
           duration={1}
-          delay={1.50}
+          delay={1.5}
           inView
-          className=" space-y-4 text-center absolute top-0 flex flex-col justify-center items-center backdrop-blur-md bg-black/20 w-[100%] h-[100%]"
+          className=" space-y-4 text-center absolute top-0 flex flex-col justify-center items-center backdrop-blur-md bg-black/50 w-[100%] h-[100%]"
         >
           <BlurFade
             direction="up"
-            duration={0.50}
-            delay={2 *1.15}
-            inView
+            duration={0.5}
+            delay={2 * 1.15}
             className="text-4xl text-center font-bold text-amber-100"
           >
             <AuroraText>Fika</AuroraText> is a concept, <br />a state of mind
@@ -71,7 +70,6 @@ function Content() {
             duration={0.55}
             direction="up"
             delay={2 * 1.25}
-            inView
             className="text-amber-100 text-xs p-4 "
           >
             Slowing down, getting in touch with yourself, and connecting with
@@ -79,10 +77,9 @@ function Content() {
             again tomorrow.
           </BlurFade>
           <BlurFade
-            duration={0.60}
+            duration={0.6}
             direction="up"
-            delay={2*1.35}
-            inView
+            delay={2 * 1.35}
             className="space-y-4"
           >
             <InteractiveHoverButton className="border-none bg-amber-500 text-white text-xs">
@@ -108,7 +105,13 @@ function Content() {
           </BlurFade>
         </div>
       </section> */}
-      <section className="bg-zinc-100">
+      <BlurFade
+        direction="up"
+        duration={0.5}
+        delay={3 * 1.3}
+        inView
+        className="bg-zinc-100  m-auto"
+      >
         <div className=" text-center p-10 cal-sans-regular">
           {/* <Badge className="bg-amber-900">Feedback</Badge> */}
           <TextAnimate
@@ -120,16 +123,12 @@ function Content() {
           >
             What Our Customer Say
           </TextAnimate>
-          <TextAnimate
-            delay={2.25}
-            animation="fadeIn"
-            duration={2}
-            by="text"
-            className="mt-4 text-xs text-gray-600"
+          <div
+            className="mt-4 text-xs text-gray-600 overflow-ellipsis"
           >
             We deeply value every story, insight, and honest feedback our users
             share, as it helps us grow and deliver even better experiences.
-          </TextAnimate>
+          </div>
         </div>
         <div className="flex flex-col lg:flex-row md:flex-row  items-center justify-center gap-4 p-10 ">
           <Card
@@ -153,7 +152,7 @@ function Content() {
             comment={<div>"nice place to avoid stress and think clearly"</div>}
           ></Card>
         </div>
-      </section>
+      </BlurFade>
       <section className="bg-black">
         <div className="relative">
           <img
